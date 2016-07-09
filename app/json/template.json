@@ -1,0 +1,146 @@
+[
+  {
+    "id":1,
+    "name":"hotel 1",
+    "description":"The Hotel Hesperia is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Venice. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Derai family and their staff offer an attentive, personalized service and are always available to offer any help to guests.",
+    "type":"html5",
+    "price":"00.00",
+    "images":[
+      {
+        "name":"hotel1.jpg"
+      },
+      {
+        "name":"hotel2.jpg"
+      },
+      {
+        "name":"hotel3.jpg"
+      },
+      {
+        "name":"hotel4.jpg"
+      },
+      {
+        "name":"hotel5.jpg"
+      }
+    ]
+  },
+  {
+    "id":2,
+    "name":"hotel 2",
+    "description":"The Hotel Hesperia is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Venice. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Derai family and their staff offer an attentive, personalized service and are always available to offer any help to guests.",
+    "type":"html5",
+    "price":"00.00",
+    "images":[
+      {
+        "name":"hotel1.jpg"
+      },
+      {
+        "name":"hotel2.jpg"
+      },
+      {
+        "name":"hotel3.jpg"
+      },
+      {
+        "name":"hotel4.jpg"
+      },
+      {
+        "name":"hotel5.jpg"
+      }
+    ]
+  },
+  {
+    "id":3,
+    "name":"hotel 3",
+    "description":"The Hotel Hesperia is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Venice. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Derai family and their staff offer an attentive, personalized service and are always available to offer any help to guests.",
+    "type":"html5",
+    "price":"00.00",
+    "images":[
+      {
+        "name":"hotel1.jpg"
+      },
+      {
+        "name":"hotel2.jpg"
+      },
+      {
+        "name":"hotel3.jpg"
+      },
+      {
+        "name":"hotel4.jpg"
+      },
+      {
+        "name":"hotel5.jpg"
+      }
+    ]
+  },
+  {
+    "id":4,
+    "name":"hotel 4",
+    "description":"The Hotel Hesperia is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Venice. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Derai family and their staff offer an attentive, personalized service and are always available to offer any help to guests.",
+    "type":"html5",
+    "price":"00.00",
+    "images":[
+      {
+        "name":"hotel1.jpg"
+      },
+      {
+        "name":"hotel2.jpg"
+      },
+      {
+        "name":"hotel3.jpg"
+      },
+      {
+        "name":"hotel4.jpg"
+      },
+      {
+        "name":"hotel5.jpg"
+      }
+    ]
+  },
+  {
+    "id":5,
+    "name":"hotel 5",
+    "description":"The Hotel Hesperia is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Venice. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Derai family and their staff offer an attentive, personalized service and are always available to offer any help to guests.",
+    "type":"html5",
+    "price":"00.00",
+    "images":[
+      {
+        "name":"hotel1.jpg"
+      },
+      {
+        "name":"hotel2.jpg"
+      },
+      {
+        "name":"hotel3.jpg"
+      },
+      {
+        "name":"hotel4.jpg"
+      },
+      {
+        "name":"hotel5.jpg"
+      }
+    ]
+  },
+  {
+    "id":6,
+    "name":"hotel 6",
+    "description":"The Hotel Hesperia is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Venice. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Derai family and their staff offer an attentive, personalized service and are always available to offer any help to guests.",
+    "type":"html5",
+    "price":"00.00",
+    "images":[
+      {
+        "name":"hotel1.jpg"
+      },
+      {
+        "name":"hotel2.jpg"
+      },
+      {
+        "name":"hotel3.jpg"
+      },
+      {
+        "name":"hotel4.jpg"
+      },
+      {
+        "name":"hotel5.jpg"
+      }
+    ]
+  }
+]

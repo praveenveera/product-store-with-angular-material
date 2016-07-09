@@ -1,0 +1,73 @@
+[{
+		"id":"1",
+		"title":"First Item",
+		"description":"Just FYI urrently using angular-material 0.7.1, and to I was able to change my svg color by actually modifying the source svg file for my icon. In my case, I was able to add attribute to my raw svg fill attribute can be any color you want hopefully this can solve your color changing issue",
+		"price":300,
+		"posted":"2015-10-24",
+		"contact":{
+			"name":"bravo",
+			"phone":"(555) 555-5555",
+			"email":"bravo@gmail.com"
+				  },	
+		"categories":[
+		"vehicles",
+		"Parts and Accessories"
+					],
+		"image":"",
+		"views":213
+		},
+		{
+		"id":"2",
+		"title":"First Item",
+		"description":"Just FYI urrently using angular-material 0.7.1, and to I was able to change my svg color by actually modifying the source svg file for my icon. In my case, I was able to add attribute to my raw svg fill attribute can be any color you want hopefully this can solve your color changing issue",
+		"price":300,
+		"posted":"2015-10-24",
+		"contact":{
+			"name":"bravo",
+			"phone":"(555) 555-5555",
+			"email":"bravo@gmail.com"
+				  },	
+		"categories":[
+		"tools",
+		"Parts and Accessories"
+					],
+		"image":"",
+		"views":213
+		},
+		{
+		"id":"3",
+		"title":"First Item",
+		"description":"Just FYI urrently using angular-material 0.7.1, and to I was able to change my svg color by actually modifying the source svg file for my icon. In my case, I was able to add attribute to my raw svg fill attribute can be any color you want hopefully this can solve your color changing issue",
+		"price":300,
+		"posted":"2015-10-24",
+		"contact":{
+			"name":"bravo",
+			"phone":"(555) 555-5555",
+			"email":"bravo@gmail.com"
+				  },	
+		"categories":[
+		"vehicles",
+		"Parts and Accessories"
+					],
+		"image":"",
+		"views":213
+		},
+		{
+		"id":"4",
+		"title":"First Item",
+		"description":"Just FYI urrently using angular-material 0.7.1, and to I was able to change my svg color by actually modifying the source svg file for my icon. In my case, I was able to add attribute to my raw svg fill attribute can be any color you want hopefully this can solve your color changing issue",
+		"price":900,
+		"posted":"2015-10-24",
+		"contact":{
+			"name":"bravo",
+			"phone":"(555) 555-5555",
+			"email":"bravo@gmail.com"
+				  },	
+		"categories":[
+		"vehicles",
+		"Parts and Accessories"
+					],
+		"image":"",
+		"views":213
+		}
+		]

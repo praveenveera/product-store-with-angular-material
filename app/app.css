@@ -28,3 +28,27 @@
   content: "";
   padding: 0;
 }
+
+
+.searchline{
+
+  margin-top: 42px;
+}
+
+
+.products.ng-enter, .products.ng-move{
+  transition: 1s all;
+  opacity: 3;
+}
+
+.products.ng-enter.ng-enter-active, .products.ng-move.ng-move-active{
+  opacity: 3;
+}
+
+.products.ng-leave{
+  animation: 1s fade_products;
+}
+@keyframes fade_products{
+  from {opacity: 3;} 
+  to {opacity: 0;}
+}

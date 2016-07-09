@@ -1,14 +1,15 @@
-'use strict';
+angular.module('storeApp', ['ngMaterial', 'ngMdIcons', 'ui.router'])
 
-// Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+.config(['$mdThemingProvider', '$stateProvider' , function($mdThemingProvider, $stateProvider) {
+ 
+  $mdThemingProvider.theme('default')
+  .primaryPalette('deep-purple')
+  .accentPalette('red');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+  $stateProvider
+  	.state('products',{
+  		url:'/products',
+  		templateUrl: 'components/products/trail.html',
+  		controller: 'storeController as vm'
+  	})
+  	}])
