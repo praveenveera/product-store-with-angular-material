@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('storeApp')
-.controller('storeController',function($http, productFactory,$mdSidenav, $mdToast, $mdDialog) {
+.controller('storeController',function($http, productFactory,$state,$mdSidenav, $mdToast, $mdDialog) {
 
 
 	var self = this;
@@ -40,8 +40,9 @@ angular.module('storeApp')
 		"email":"bravo@gmail.com"
 	}
 
-	function openSidebar() {
-		$mdSidenav('left').open();
+	function openSidebar() { 
+		$state.go('products.new');
+		//$mdSidenav('left').open();
 		console.log('sidenav opened');		
 		console.log(self.product);
 		self.product = {};

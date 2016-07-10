@@ -14,7 +14,7 @@
     </md-button> 
   </div>
 </md-toolbar>  
- 
+
 <div class="search" layout='row' layout-align='center center' ng-show='vm.filterSearch'>
     
     <md-input-container md-autofocus class='searchline'>
@@ -38,40 +38,8 @@
     </md-input-container>
 </div> 
 
-<md-sidenav 
- class ='md-sidenav-right md-whiteframe-z2'
- md-component-id='left'
- >
- <md-toolbar>
-   <h1 class="md-toolbar-tools">Add a Product</h1>
- </md-toolbar>  
- <md-content layout-padding>
- <form>
-   <md-input-container>
-     <label for='title'>Title</label>
-     <input type="text" id="title" md-autofocus ng-model='pro.title'>
-     </md-input-container>
-     <md-input-container>
-     <label for='price'>Price</label>
-     <input type="text" id="price" ng-model='pro.price' md-autofocus>
-     </md-input-container>
-     <md-input-container>
-     <label for='price'>Description</label>
-     <textarea type='text' id='description' ng-model='pro.description' ></textarea> 
-     </md-input-container>
-     <md-input-container>
-     <label for='image'>Image Link</label>
-     <textarea type='text' id='image' ng-model='pro.image'></textarea> 
-     </md-input-container>
-     <md-button class='md-primary' ng-click= 'vm.saveProduct(pro)' ng-if='!vm.editing' >Save</md-button>
-     <md-button class='md-primary' ng-if='vm.editing' ng-click='vm.saveEdit()'>Save Edit</md-button> 
-     <md-button class='md-warn' ng-click='vm.closeSidebar()' >Cancel</md-button> 
-     <pre>{{product | json}}</pre>
-   </form>
  
-   
- </md-content> 
- </md-sidenav>
+ <ui-view></ui-view>
 
 <md-content class='md-padding' layout='row' layout-wrap>
   <md-card flex='30' ng-repeat='product in vm.products   | 
