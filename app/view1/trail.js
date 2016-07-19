@@ -2,11 +2,10 @@
 'use strict';
 
 angular.module('storeApp')
-.controller('storeController',function($http, productFactory,$state,$mdSidenav, $mdToast, $mdDialog) {
+.controller('storeController',function($http,$scope, productFactory,$state,$mdSidenav, $mdToast, $mdDialog) {
 
 
 	var self = this;
-
 
 	self.openSidebar = openSidebar;
 	self.closeSidebar = closeSidebar;
@@ -21,7 +20,6 @@ angular.module('storeApp')
 	self.product;
 	self.categories;
 	self.editing;
-	
 	self.filterSearch;
 
 
@@ -32,7 +30,17 @@ angular.module('storeApp')
 	self.products = response.data;
 	self.categories = getCategories(self.products);	
 	});
+
+	$scope.$on('newProduct', function(event, product){
+		product.id = self.products.length+1;
+		self.products.push(product);
+		self.notification('product saved');
+	})
  
+
+ 	$scope.$on('editSaved', function(event, message){
+ 		self.notification('product edited');
+ 	})
 
 	var contact={
 		"name":"bravo",
@@ -55,24 +63,25 @@ angular.module('storeApp')
 		console.log(self.product);
 	};	
 	
-	function saveProduct(pro){
-		if(pro){
-		pro.contact = contact;	
-		self.products.push(pro);
+	function saveProduct(product){
+		if(product){
+		product.contact = contact;	
+		self.products.push(product);
 		console.log("saved");
-		console.log(pro);
-		console.log(self.pro);
+		console.log(product);
+		console.log(self.product);
 		closeSidebar();
 		self.notification('product added ');
 	}
 	};
 
 		function editProduct(product){
-			self.editing = true;
-			self.product = product;
-			console.log(product);
-			openSidebar();
+			$state.go('products.edit',{
+				id : product.id,
+				product: product
+			});
 
+			console.log(product);
 		};
 
 		 function saveEdit(product){

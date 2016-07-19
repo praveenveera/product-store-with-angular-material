@@ -16,5 +16,13 @@ angular.module('storeApp', ['ngMaterial', 'ngMdIcons', 'ui.router'])
       url:'/new',
       templateUrl: 'components/templates/new/products_new.html',
       controller: 'newProductsCrtl as vm'
+    })
+       .state('products.edit',{
+      url:'/edit/:id',
+      templateUrl: 'components/templates/edit/products_edit.html',
+      controller: 'editProductsCrtl as vm',
+      params:{
+         product:null
+      }
     });
   	}])
