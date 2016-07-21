@@ -1,4 +1,4 @@
-angular.module('storeApp', ['ngMaterial', 'ngMdIcons', 'ui.router'])
+angular.module('storeApp', ['ngMaterial', 'ngMdIcons', 'ui.router','firebase'])
 
 .config(['$mdThemingProvider', '$stateProvider' , function($mdThemingProvider, $stateProvider) {
  

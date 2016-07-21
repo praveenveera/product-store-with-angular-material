@@ -2,15 +2,18 @@
 'use strict';
 
 angular.module('storeApp')
-.factory('productFactory', function($http){
-	function getDetails(){
-		return $http.get("/json/product.json");
-	}
+.factory('productFactory', function($http, $firebaseArray){
+	//function getDetails(){
+		//return $http.get("/json/product.json");
+		
+		var ref = new Firebase('https://store-product.firebaseio.com');
+	//}
 
 	return{
-		getDetails : getDetails
+		//getDetails : getDetails
+		ref : $firebaseArray(ref)
 	}
 
-})
+});
 
 })();

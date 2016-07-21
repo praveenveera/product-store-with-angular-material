@@ -21,15 +21,20 @@ angular.module('storeApp')
 	self.categories;
 	self.editing;
 	self.filterSearch;
+	self.products = productFactory.ref;
 
-
-
-	productFactory.getDetails().then(function(response){
-
-	console.log(response);
-	self.products = response.data;
-	self.categories = getCategories(self.products);	
+	self.products.$loaded().then(function(products){
+	self.categories = getCategories(products);
 	});
+
+
+
+	//productFactory.getDetails().then(function(response){
+
+	//console.log(response);
+	//self.products = response.data;
+	//self.categories = getCategories(self.products);	
+	//});
 
 	$scope.$on('newProduct', function(event, product){
 		product.id = self.products.length+1;
@@ -138,7 +143,7 @@ angular.module('storeApp')
 		 return _.uniq(categories);
 	}
 
-	
+
 
 });
 
