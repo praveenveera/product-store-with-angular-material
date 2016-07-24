@@ -37,9 +37,11 @@ angular.module('storeApp')
 	//});
 
 	$scope.$on('newProduct', function(event, product){
-		product.id = self.products.length+1;
-		self.products.push(product);
+		//product.id = self.products.length+1;
+		//self.products.push(product);
+		self.products.$add(product);
 		self.notification('product saved');
+		closeSidebar();
 	})
  
 
@@ -82,7 +84,7 @@ angular.module('storeApp')
 
 		function editProduct(product){
 			$state.go('products.edit',{
-				id : product.id,
+				id : product.$id,
 				product: product
 			});
 
@@ -106,9 +108,11 @@ angular.module('storeApp')
           .cancel('no');
 		    $mdDialog.show(confirm).then(function() {
 		      var index = self.products.indexOf(product);
-				self.products.splice(index,1);
+				self.products.$remove(product);
+				//self.products.splice(index,1);
 				//console.log(product);
 				console.log('deleted');
+				notification('Item removed');
 		    }, function() {
 		      self.status = 'back to main screen';
 		    });
@@ -142,6 +146,7 @@ angular.module('storeApp')
 
 		 return _.uniq(categories);
 	}
+
 
 
 

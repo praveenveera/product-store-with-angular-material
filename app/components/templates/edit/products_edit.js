@@ -6,9 +6,10 @@
 	.controller('editProductsCrtl',function($scope, $state, $mdSidenav,$mdDialog, $timeout, productFactory){
 		var vm = this;
 		vm.closeSidebar = closeSidebar;
-		
+		vm.products =  productFactory.ref;
 		vm.saveEdit = saveEdit;
-		vm.product = $state.params.product; 
+		vm.product = vm.products.$getRecord($state.params.id);
+
 
 		$timeout(function() {
 			$mdSidenav('left').open();
@@ -28,9 +29,12 @@
 		}
 
 		function saveEdit(){
-			$scope.$emit('editSaved','Edit Saved');
-			vm.sidenavOpen = false; 
+			vm.products.$save(vm.product).then(function () {
+				$scope.$emit('editSaved','Edit Saved');
+				vm.sidenavOpen = false; 
 
+			})
+			
 		}
 		
 	});		
